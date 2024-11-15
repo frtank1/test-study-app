@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "test-study-app"
 include(":app")
- 
+include(":core:core")
+include(":core:views")
+include(":core:theme")

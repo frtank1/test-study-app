@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.test_study_app"
-        minSdk = 24
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,4 +67,18 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.voyager.navigator)
+    implementation(libs.voyager.screenmodel)
+    implementation(libs.voyager.koin)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidX.compose)
+    implementation(libs.koin.core)
+
+    implementation(libs.ktor.core)
+    implementation(libs.ktor.android)
+    implementation(libs.ktor.auth)
+    implementation(libs.ktor.logging)
+    implementation(libs.ktor.content)
+    implementation(libs.ktor.serialization)
 }
