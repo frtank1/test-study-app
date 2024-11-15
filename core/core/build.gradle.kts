@@ -40,4 +40,24 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.voyager.navigator)
+    implementation(libs.voyager.screenmodel)
+    implementation(libs.voyager.koin)
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidX.compose)
+
+    implementation(libs.lifecycle.runtime.compose)
+    implementation(libs.paperdb)
+
+    implementation(libs.ktor.core)
+    implementation(libs.ktor.android)
+    implementation(libs.ktor.auth)
+    implementation(libs.ktor.logging)
+    implementation(libs.ktor.content)
+    implementation(libs.ktor.serialization)
+    implementation(libs.trikita.log)
+
+    implementation(libs.androidx.lifecycle)
 }
+
