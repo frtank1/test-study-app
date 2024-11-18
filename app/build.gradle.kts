@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id(libs.versions.kotlinParcelize.get())
 }
 
 android {
@@ -60,6 +61,7 @@ dependencies {
     implementation(project(":core:core"))
     implementation(project(":core:theme"))
     implementation(project(":core:views"))
+    implementation(project(":features:auth"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

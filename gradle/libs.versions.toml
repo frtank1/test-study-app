@@ -11,6 +11,7 @@ composeBom = "2024.09.01"
 lifecycle = "2.8.7"
 googleServices = "4.4.2"
 kotlin_serialization = "1.9.21"
+kotlinParcelize = "kotlin-parcelize"
 kotlinCompilerExtensionVersion = "1.5.13"
 #navigation
 voyager = "1.0.0"
