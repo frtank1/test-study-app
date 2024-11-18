@@ -1,7 +1,6 @@
 package com.example.core.base
 
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.core.screen.ScreenKey
@@ -38,8 +37,4 @@ abstract class CoreBaseScreen: Screen {
         return ResultNavigation.getValue()
     }
 
-    @Composable
-    fun ShowBottomBar(){
-        LocalContext.current.getCoreBaseActivity().showBottomBar()
-    }
 }
