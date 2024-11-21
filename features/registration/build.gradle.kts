@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.auth"
+    namespace = "com.example.registration"
     compileSdk = 34
 
     defaultConfig {
@@ -53,7 +53,6 @@ dependencies {
     implementation(project(":core:theme"))
     implementation(project(":core:views"))
     implementation(project(":data:auth"))
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

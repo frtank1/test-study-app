@@ -20,6 +20,7 @@ import cafe.adriel.voyager.navigator.CurrentScreen
 import cafe.adriel.voyager.navigator.Navigator
 import com.example.core.base.CoreBaseActivity
 import com.example.core.navigation.ScreenLifecycleOwner
+import com.example.registration.RegistrationScreen
 import com.example.theme.TestStudyAppTheme
 import kz.secret_santa_jusan.presentation.Auth.AuthScreen
 import org.koin.androidx.compose.KoinAndroidContext
@@ -42,7 +43,7 @@ class MainActivity : CoreBaseActivity() {
                     ) {
 
                         Navigator(
-                            screen = AuthScreen(),
+                            screen = RegistrationScreen(),
                             content = { navigator ->
                                 remember(navigator.lastItem) {
                                     ScreenLifecycleStore.get(navigator.lastItem) {

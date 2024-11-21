@@ -1,12 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    kotlin("plugin.parcelize")
-    kotlin("plugin.serialization")
 }
 
 android {
-    namespace = "com.example.core"
+    namespace = "com.example.auth"
     compileSdk = 34
 
     defaultConfig {
@@ -37,10 +35,10 @@ android {
     kotlin {
         jvmToolchain(17)
     }
-
 }
 
 dependencies {
+    implementation(project(":core:core"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -49,30 +47,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation(libs.voyager.navigator)
-    implementation(libs.voyager.screenmodel)
-    implementation(libs.voyager.koin)
-    implementation(libs.koin.android)
-    implementation(libs.koin.androidX.compose)
-
-    implementation(libs.lifecycle.runtime.compose)
-    implementation(libs.paperdb)
-
-    implementation(libs.ktor.core)
-    implementation(libs.ktor.android)
-    implementation(libs.ktor.auth)
-    implementation(libs.ktor.logging)
-    implementation(libs.ktor.content)
-    implementation(libs.ktor.serialization)
-    implementation(libs.trikita.log)
-
     implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.firestore.ktx)
-    implementation(libs.firebase.crashlytics.ktx)
-    implementation(libs.firebase.analytics.ktx)
-    implementation(libs.firebase.config.ktx)
     implementation(libs.firebase.auth.ktx)
-
-    implementation(libs.androidx.lifecycle)
 }
-

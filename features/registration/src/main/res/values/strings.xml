@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Вход</string>
+    <string name="Email">Email</string>
+    <string name="placeholder_email">example@gmail.com</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="Password">Пароль</string>
+    <string name="repeat_password">Введите пароль ещё раз</string>
+    <string name="SecondPassword">Повторить пароль</string>
+    <string name="yes_account">Уже есть аккаунт? </string>
+    <string name="Enter">Войти</string>
+    <string name="Registration">Регистрация</string>
+</resources>

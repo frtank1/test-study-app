@@ -12,6 +12,9 @@ lifecycle = "2.8.7"
 googleServices = "4.4.2"
 kotlin_serialization = "1.9.21"
 kotlinParcelize = "kotlin-parcelize"
+firbase_crashlytics = "3.0.2"
+firebase = "33.4.0"
+firbaseAuth = "21.5.0"
 kotlinCompilerExtensionVersion = "1.5.13"
 #navigation
 voyager = "1.0.0"
@@ -68,6 +71,14 @@ ktor-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
 ktor-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+# firbase
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase" }
+firebase-crashlytics-ktx = { module = "com.google.firebase:firebase-crashlytics-ktx" }
+firebase-messaging-ktx = { module = "com.google.firebase:firebase-messaging-ktx" }
+firebase-config-ktx = { module = "com.google.firebase:firebase-config-ktx" }
+firebase-analytics-ktx = { module = "com.google.firebase:firebase-analytics-ktx" }
+firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx" }
+firebase-auth-ktx =  {module = "com.google.firebase:firebase-auth-ktx", version.ref = "firbaseAuth"}
 
 # log
 trikita-log = { module = "co.trikita:log", version.ref = "trikitaLog" }
@@ -82,4 +93,5 @@ jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = 
 android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin_serialization" }
 google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+firebase-crashlytics = {id  = "com.google.firebase.crashlytics", version.ref = "firbase_crashlytics"}
 
